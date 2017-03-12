@@ -32,6 +32,12 @@ datetime.datetime(2016, 2, 13, 21, 34, 58, 268978)
 'iYpZpde@jslx4.com'
 ```
 
+#### MAC Address
+```
+>>> pyrandom.mac_address()
+'fe:23:1d:1d:ec:be'
+```
+
 #### IPv4 Address
 ```
 >>> pyrandom.ipv4address()
