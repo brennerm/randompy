@@ -1,5 +1,15 @@
 # randompy
-
+### Installation
+- From source
+```
+git clone https://github.com/brennerm/randompy
+cd randompy
+sudo python3 setup.py install
+```
+- With pip
+```
+pip install randompy
+```
 ### Example use
 
 #### String
