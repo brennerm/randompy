@@ -47,6 +47,14 @@ datetime.datetime(2016, 2, 13, 21, 34, 58, 268978)
 >>> randompy.mac_address()
 'fe:23:1d:1d:ec:be'
 ```
+It's also possible to define an own prefix.
+```
+>>> randompy.mac_address('02:00:00')
+'02:00:00:84:62:3e'
+
+>>> mac_address('02:00:00:00:00')
+'02:00:00:00:00:63'
+```
 
 #### IPv4 Address
 ```
