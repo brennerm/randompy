@@ -64,8 +64,11 @@ def mail(length_local=7, length_domain=5, domain_ending='com'):
     return string(length_local) + '@' + string(length_domain) + '.' + domain_ending
 
 
-def mac_address():
-    return ':'.join('{:02x}'.format(integer(0, 255)) for _ in range(6))
+def mac_address(prefix=None):
+    mac = prefix.split(':') if prefix else list()
+    while len(mac) < 6:
+        mac.append('{:02x}'.format(integer(0, 255)))
+    return ':'.join(mac)
 
 
 def ipv4address():
